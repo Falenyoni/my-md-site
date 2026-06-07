@@ -1,0 +1,6 @@
+title: My MD Site
+description: A simple markdown-based website
+theme: minima
+header_pages:
+  - about.md
+  - contact.md
