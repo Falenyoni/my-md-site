@@ -1,6 +1,80 @@
-title: My MD Site
-description: A simple markdown-based website
-theme: minima
-header_pages:
-  - about.md
-  - contact.md
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Africa/Harare
+
+title: Bongani Nyoni
+tagline: Biblical Insights · SDA · Devotionals
+description: >-
+  Biblical content, SDA doctrine, prophecy, and devotional writing —
+  exploring Scripture one post at a time.
+
+# Your GitHub Pages URL — update with your actual GitHub username
+# e.g. https://yourusername.github.io or your custom domain
+url: "https://nyonibongani.github.io"
+baseurl: ""
+
+github:
+  username: # your GitHub username here
+
+social:
+  name: Bongani Nyoni
+  email: b.nyoni1101@gmail.com
+  links:
+    - https://github.com/       # add your GitHub profile URL
+    - https://www.linkedin.com/ # add your LinkedIn URL
+
+# Sidebar avatar — add your photo to assets/img/avatar.jpg
+avatar: "assets/img/avatar.jpg"
+
+# Light | dark | auto (follows OS setting)
+theme_mode:
+
+toc: true
+comments:
+  active:
+
+paginate: 10
+
+# Jekyll Archives (required for categories and tags pages)
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      math: false
+      mermaid: false
+  - scope:
+      path: _tabs
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-redirect-from
