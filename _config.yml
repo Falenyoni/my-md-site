@@ -8,13 +8,11 @@ description: >-
   Biblical content, SDA doctrine, prophecy, and devotional writing —
   exploring Scripture one post at a time.
 
-# Your GitHub Pages URL — update with your actual GitHub username
-# e.g. https://yourusername.github.io or your custom domain
-url: "https://nyonibongani.github.io"
-baseurl: ""
+url: "https://falenyoni.github.io"
+baseurl: "/my-md-site"
 
 github:
-  username: # your GitHub username here
+  username: Falenyoni
 
 social:
   name: Bongani Nyoni
